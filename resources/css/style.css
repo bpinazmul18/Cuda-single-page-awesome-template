@@ -1,6 +1,178 @@
-body{
+/*=========================================*/
+/*BASIC SETUP*/
+/*=========================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
     font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
 }
-.box{
-    background-color: aquamarine;
+ul{
+    list-style-type: none;
 }
+/*=========================================*/
+/*REUSABLE COMPONENTS*/
+/*=========================================*/
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.row:after, .row:before {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+    text-align: center;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.6rem;
+    background: #14a58c;
+    margin: auto;
+    margin-top: 2.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.little-description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 60%;
+    margin-left: 20%;
+    margin: auto;
+    line-height: 2.6rem;
+}
+
+.btn:link, .btn:visited, .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: inline-block;
+    background: #000;
+    border-bottom: 0.2rem solid #fff;
+    padding: 2.8rem 8.2rem;
+    border-radius: 0.4rem;
+}
+/* START HEADER SECTION */
+header {
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(./img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+    margin-top: 35px;
+    float: left;
+}
+
+ul.main-nav {
+    float: right;
+    margin-top: 40px;
+}
+
+ul.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+ul.main-nav li:first-child {
+    margin-left: 0;
+}
+
+ul.main-nav li a:link, ul.main-nav li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .6rem 1.5rem;
+    background: rgba(100, 58, 121, 0);
+    transition: .2s ease-in;
+}
+
+ul.main-nav li a:hover {
+    background: rgba(100, 58, 121, 1);
+}
+
+ul.main-nav li.active{
+    background: rgba(100, 58, 121, 1);
+}
+
+.hero-text-box {
+    margin-top: 14.8rem;
+    text-align: center;
+}
+
+.hero-text-box h1 {
+    font-size: 4.2rem;
+    color: #f7f3ea;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    line-height: 4.6rem;
+}
+
+.btn-hero:link, .btn-hero:visited {
+    background: #eb7d4b;
+    border-bottom: 0.4rem solid #c86a40;
+}
+/* END HEADER SECTION */
+
+/* START SERVICES SECTION */
+.services-section {
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.services-icon {
+    height: 12.4rem;
+    width: auto;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+/* START SERVICES SECTION */

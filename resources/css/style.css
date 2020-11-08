@@ -8,6 +8,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Titillium Web', sans-serif;
@@ -262,3 +263,54 @@ ul.main-nav li.active{
     transform: rotate(360deg);
 }
 /* END TEAM SECTION */
+
+/* START SKILL SECTION */
+.skill-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/skill-bg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3c4761;
+    text-align: center;
+}
+
+.skill-section h2:after {
+    background: #dfe8ed;
+}
+
+.skill-section .box {
+    margin-top: 8.2rem;
+}
+
+.skill-section .box h3 {
+    margin-top: 2.8rem;
+    margin-bottom: 0;
+}
+
+svg.radial-progress circle {
+    stroke-width: 5;
+}
+
+svg.radial-progress text {
+    font-size: 1.5rem;
+    fill: #3c4761;
+    font-weight: 300;
+}
+
+.box .web-design circle {
+    stroke: #30bae7;
+}
+
+.box .html-css circle {
+    stroke: #d74680;
+}
+
+.box .graphic-design circle {
+    stroke: #15c7a8;
+}
+
+.box .ui-ux circle {
+    stroke: #eb7d4b;
+}
+
+/* END SKILL SECTION */

@@ -1,0 +1,248 @@
+@media only screen and (max-width:1200px) {
+    header {
+        min-height: 100vh;
+    }
+    .row {
+        margin: 0 15px;
+    }
+    .testimonial-section .client-photo {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .main-nav {
+        display: none
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu span {
+        color: #fff;
+        font-size: 40px;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .mobile-menu span:hover {
+        cursor: pointer;
+    }
+
+    .sticky .mobile-menu span {
+        margin-top: 4px;
+    }
+
+    .mobile-menu span {
+        display: block
+    }
+
+    .testimonial-section .client-photo {
+        float: none;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .testimonial-section .client-review {
+        width: 100%;
+        float: none;
+        text-align: center
+    }
+    .testimonial-section .client-review p {
+        font-size: 18px;
+    }
+    .contact-section form {
+        width: 100%;
+        margin-left: 0
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .hero-text-box h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    .little-description {
+        font-size: 16px;
+        text-align: center;
+    }
+    .services-icon {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .team-section .box {
+        padding: 0;
+    }
+    .team-section .box h4 {
+        font-size: 20px;
+    }
+    .team-section .box .role {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .team-section .box .team-member {
+        width: 100%;
+    }
+
+    .social-icon ul li:first-child {
+        margin-left: 0;
+    }
+
+    .social-icon ul li:last-child {
+        margin-right: 0;
+    }
+
+    .skill-section h3 {
+        font-size: 20px;
+    }
+
+    .testimonial-section .col:nth-child(3), .testimonial-section .col:nth-child(4) {
+        margin-top: 40px;
+    }
+    .footer-section li {
+        margin: 0 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .min-header {
+        height: 75vh;
+    }
+    .hero-text-box {
+        margin-top: 120px;
+    }
+    .hero-text-box h1 {
+        font-size: 30px;
+    }
+    .btn:link, .btn:visited, .btn {
+        padding: 16px 60px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .little-description {
+        width: 100%;
+    }
+    .span_1_of_4 {
+        width: 49.2%;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .team-section .little-description {
+        margin-bottom: 30px;
+    }
+    .services-section .col:nth-child(4){
+        margin-left: 0;
+    }
+    .team-section .col {
+        margin: 0;
+    }
+    .team-section .box p {
+        font-size: 14px;
+    }
+    .team-section .col:nth-child(3), .team-section .col:nth-child(4) {
+        margin-top: 30px;
+    }
+
+    .team-section .box .team-member {
+        width: auto;
+    }
+    .skill-section .col {
+        margin: 0;
+    }
+    .skill-section .little-description {
+        margin-bottom: 60px;
+    }
+    .portfolio-section .box {
+        padding: 0;
+    }
+    .portfolio-section h4 {
+        font-size: 16px;
+    }
+
+    .testimonial-section .client-review h3 {
+        margin-top: 10px;
+    }
+
+    .footer-section li {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    header {
+        min-height: 80vh;
+    }
+    /* section {
+        padding: 40px 0;
+    } */
+    .hero-text-box {
+        padding-top: 40px;
+        margin-top: 0;
+    }
+    .hero-text-box h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .span_1_of_4{
+        width: 100%;
+    }
+    .services-icon {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h2:after {
+        margin-top: 16px;
+    }
+    .team-section .box .team-member {
+        margin-bottom: 0;
+    }
+    .team-section .col:nth-child(2) {
+        margin-top: 30px;
+    }
+    .skill-section .box h3 {
+        margin-top: 0;
+        margin-bottom: inherit;
+    }
+    .portfolio-filter button {
+        padding: 6px 10px;
+    }
+    .portfolio-section .btn-load-more:link, .portfolio-section .btn-load-more:visited {
+        padding: 16px 40px;
+    }
+    .testimonial-section .col:nth-child(1), .testimonial-section .col:nth-child(2) {
+        margin-top: 20px;
+    }
+    .testimonial-section .col:nth-child(3), .testimonial-section .col:nth-child(4) {
+        margin-top: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .testimonial-section .role {
+        font-size: 16px;
+    }
+    .contact-section .little-description {
+        font-size: 16px;
+    }
+    .contact-section .send-message-btn {
+        padding: 14px 40px;
+    }
+    .portfolio-filter button {
+        margin-top: 10px;
+    }
+    .btn:link, .btn:visited, .btn {
+        padding: 10px 20px;
+    }
+    .contact-section .send-message-btn {
+        padding: 10px 20px;
+    }
+}

@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 body {
@@ -21,12 +20,12 @@ ul{
 /*REUSABLE COMPONENTS*/
 /*=========================================*/
 .row {
-    max-width: 114rem;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 section {
-    padding: 8rem 0;
+    padding: 80px 0;
 }
 
 .box {
@@ -34,59 +33,59 @@ section {
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
+    letter-spacing: 3px;
     margin-top: 0;
-    margin-bottom: 2.2rem;
+    margin-bottom: 22px;
     text-align: center;
 }
 
 h2:after {
     content: "";
     display: block;
-    height: .4rem;
-    width: 8.6rem;
+    height: 4px;
+    width: 90px;
     background: #14a58c;
     margin: auto;
-    margin-top: 2.2rem;
+    margin-top: 22px;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 400;
-    margin-top: 2.8rem;
+    margin-top: 28px;
     text-transform: uppercase;
 }
 
 .little-description {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 400;
     width: 60%;
     margin-left: 20%;
     margin: auto;
-    line-height: 2.6rem;
+    line-height: 26px;
 }
 
 .btn:link, .btn:visited, .btn {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 700;
     display: inline-block;
     background: #000;
-    border-bottom: 0.2rem solid #fff;
-    padding: 2.3rem 8.5rem;
-    border-radius: 0.4rem;
+    border-bottom: 2px solid #fff;
+    padding: 23px 85px;
+    border-radius: 4px;
 }
 /* START HEADER SECTION */
 header {
@@ -95,7 +94,7 @@ header {
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .logo {
@@ -112,7 +111,7 @@ ul.main-nav {
 
 ul.main-nav li {
     display: inline-block;
-    margin-left: 1rem;
+    margin-left: 10px;
 }
 
 ul.main-nav li:first-child {
@@ -124,9 +123,9 @@ ul.main-nav li a:link, ul.main-nav li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 400;
-    padding: .6rem 1.5rem;
+    padding: 6px 15px;
     background: rgba(100, 58, 121, 0);
     transition: .2s ease-in;
 }
@@ -139,41 +138,150 @@ ul.main-nav li.active{
     background: rgba(100, 58, 121, 1);
 }
 
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overlay {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+
+.overlay-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.overlay a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+a.closebtn {
+    float: right;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(135, 80, 156, 0.9);
-    box-shadow: 0 0.2rem 0 rgba(255,255,255,.6);
+    box-shadow: 0 2px 0 rgba(255,255,255,.6);
     z-index: 9999;
 }
 
 .sticky .logo {
-    margin-top: 0.8rem;
+    margin-top: 7px;
+    margin-bottom: 8px;
 }
 
 .sticky .main-nav {
-    padding: 1rem 0;
+    padding: 10px 0;
     margin-top: 0;
 }
 
 .hero-text-box {
-    margin-top: 14.8rem;
+    margin-top: 148px;
     text-align: center;
 }
 
 .hero-text-box h1 {
-    font-size: 4.2rem;
+    font-size: 42px;
     color: #f7f3ea;
     font-weight: 700;
-    margin-bottom: 6rem;
-    line-height: 4.6rem;
+    margin-bottom: 60px;
+    line-height: 46px;
 }
 
 .btn-hero:link, .btn-hero:visited {
     background: #eb7d4b;
-    border-bottom: 0.4rem solid #c86a40;
+    border-bottom: 4px solid #c86a40;
 }
 /* END HEADER SECTION */
 
@@ -188,16 +296,16 @@ ul.main-nav li.active{
 }
 
 .services-icon {
-    height: 12.4rem;
+    height: 124px;
     width: auto;
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
 
 .box p {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 2rem;
+    line-height: 20px;
 }
 /* END SERVICES SECTION */
 
@@ -220,7 +328,7 @@ ul.main-nav li.active{
 
 .team-section .little-description {
     color: #3c4761;
-    margin-bottom: 8rem;
+    margin-bottom: 80px;
 }
 
 .team-section .box {
@@ -228,42 +336,41 @@ ul.main-nav li.active{
 }
 
 .team-section .box .team-member {
-    margin-bottom: 4rem;
-    height: 20rem;
-    width: 20rem;
+    width: auto;
+    margin-bottom: 40px;
     border-radius: 50%;
 }
 
 .team-section .box h4 {
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 700;
     color: #27283d;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .team-section .box .role {
     color: #30bae7;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 400;
-    margin-bottom: 2.8rem;
+    margin-bottom: 28px;
     display: block;
     text-transform: capitalize;
 }
 
 .team-section .box p {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 300;
     color: #3c4761;
-    line-height: 2.6rem;
+    line-height: 26px;
 }
 
 .social-icon {
-    margin-top: 2.8rem;
+    margin-top: 28px;
 }
 
 .social-icon ul li {
     display: inline-block;
-    margin: 0 0.5rem;
+    margin: 0 5px;
 }
 
 .social-icon ul li a:link, .social-icon ul li a:visited {
@@ -272,12 +379,12 @@ ul.main-nav li.active{
 
 .social-icon ul li a:link i:before, .social-icon ul li a:visited i:before {
     background: #bdd1df;
-    height: 2rem;
-    width: 2rem;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    padding: 0.6rem;
+    padding: 6px;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 18px;
     transition: .2s ease-in;
 }
 
@@ -302,11 +409,11 @@ ul.main-nav li.active{
 }
 
 .skill-section .box {
-    margin-top: 8.2rem;
+    margin-top: 82px;
 }
 
 .skill-section .box h3 {
-    margin-top: 2.8rem;
+    margin-top: 28px;
     margin-bottom: 0;
 }
 
@@ -315,7 +422,7 @@ svg.radial-progress circle {
 }
 
 svg.radial-progress text {
-    font-size: 1.5rem;
+    font-size: 15px;
     fill: #3c4761;
     font-weight: 300;
 }
@@ -362,19 +469,19 @@ svg.radial-progress text {
 }
 
 .portfolio-filter {
-    margin: 4.2rem 0;
+    margin: 42px 0;
 }
 
 .portfolio-filter button {
     background: #ebc985;
     border: 0;
-    padding: 0.9rem 2rem;
-    font-size: 1.8rem;
+    padding: 9px 20px;
+    font-size: 18px;
     font-weight: 400;
     outline: 0;
     text-transform: uppercase;
-    border-radius: 0.5rem;
-    margin: 0 .5rem;
+    border-radius: 5px;
+    margin: 0 5px;
     transition: 0.5s ease-in-out;
 }
 
@@ -388,21 +495,21 @@ svg.radial-progress text {
 
 .portfolio-filter button:hover {
     cursor: pointer;
-    box-shadow: inset 0 0.3rem 0.5rem rgba(60,71,97,.5);
+    box-shadow: inset 0 3px 5px rgba(60,71,97,.5);
 }
 
 .portfolio-img {
     width: 100%;
-    height: 30rem;
+    height: auto;
 }
 
 
 .portfolio-section .btn-load-more:link, .portfolio-section .btn-load-more:visited {
-    padding: 2.4rem 6rem;
+    padding: 24px 60px;
     background: #17c2a4;
     color: #fff;
-    border-bottom: 0.2rem solid #14a58c;
-    margin-top: 5.8rem;
+    border-bottom: 2px solid #14a58c;
+    margin-top: 58px;
 }
 
 .portfolio-section .mixitup-control-active {
@@ -426,11 +533,11 @@ svg.radial-progress text {
 }
 
 .testimonial-section .col:nth-child(1), .testimonial-section .col:nth-child(2) {
-    margin-top: 4rem;
+    margin-top: 40px;
 }
 
 .testimonial-section .col:nth-child(3), .testimonial-section .col:nth-child(4) {
-    margin-top: 8rem;
+    margin-top: 80px;
 }
 
 
@@ -439,37 +546,36 @@ svg.radial-progress text {
 }
 
 .testimonial-section .client-photo {
-    width: 10rem;
     float: left;
-    margin-right: 5rem;
+    margin-right: 50px;
 }
 
 .testimonial-section .client-photo img {
-    height: 10rem;
+    height: 100px;
     border-radius: 50%;
 }
 
 .testimonial-section .client-review {
     float: left;
-    width: 32.6rem;
+    width: 326px;
     text-align: left;
 }
 
 .testimonial-section .client-review p {
-    font-size: 2.1rem;
+    font-size: 21px;
     font-style: italic;
     line-height: 1.4;
 }
 
 .testimonial-section .client-review h3 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .testimonial-section .role {
     display: block;
     color: #ffdd99;
-    font-size: 1.8rem;
+    font-size: 18px;
 }
 /* END TESTIMONIAL SECTION */
 
@@ -488,11 +594,11 @@ svg.radial-progress text {
 }
 
 .contact-section .little-description {
-    font-size: 1.8rem;
+    font-size: 18px;
 }
 
 .contact-section form {
-    margin-top: 7rem;
+    margin-top: 70px;
     width: 70%;
     margin-left: 15%;
 }
@@ -501,12 +607,12 @@ svg.radial-progress text {
     width: 100%;
     background: #273a71;
     border: 2px solid #273a71;
-    font-size: 1.8rem;
+    font-size: 18px;
     outline: 0;
-    padding: 1.5rem;
+    padding: 15px;
     color: #fff;
-    border-radius: 0.5rem;
-    margin: 0.5rem 0;
+    border-radius: 5px;
+    margin: 5px 0;
 }
 
 .contact-section input[type="text"]::placeholder, .contact-section input[type="email"]::placeholder, .contact-section textarea::placeholder {
@@ -514,16 +620,16 @@ svg.radial-progress text {
 }
 
 .contact-section textarea {
-    height: 20rem;
-    margin-bottom: 6rem;
+    height: 200px;
+    margin-bottom: 60px;
 }
 
 .contact-section .send-message-btn {
-    padding: 2.4rem 8.3rem;
+    padding: 24px 83px;
     background: #30bae7;
     color: #fff;
     border: 0;
-    border-bottom: 0.2rem solid #299ec5;
+    border-bottom: 2px solid #299ec5;
 }
 
 .contact-section .send-message-btn:hover {
@@ -535,17 +641,17 @@ svg.radial-progress text {
     background: #344b8e;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 2.3rem 0;
+    padding: 23px 0;
     font-weight: 600;
 }
 
 .footer-section li {
     display: inline-block;
-    margin: 0 2.5rem;
+    margin: 0 25px;
 }
 
 .footer-section li a {
-    font-size: 2.4rem;
+    font-size: 22px;
     text-decoration: none;
     color: #fff;
 }

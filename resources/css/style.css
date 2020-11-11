@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*=========================================*/
 /*BASIC SETUP*/
 /*=========================================*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -89,6 +97,8 @@ h4 {
 }
 /* START HEADER SECTION */
 header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 80, 156, 0.9)), to(rgba(135, 80, 156, 0.9))), url(./img/hero-bg.jpg);
+    background: -o-linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(./img/hero-bg.jpg);
     background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(./img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -127,6 +137,8 @@ ul.main-nav li a:link, ul.main-nav li a:visited {
     font-weight: 400;
     padding: 6px 15px;
     background: rgba(100, 58, 121, 0);
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
     transition: .2s ease-in;
 }
 
@@ -151,6 +163,8 @@ ul.main-nav li.active{
     background: rgba(0, 0, 0, 0.9);
     z-index: 1;
     overflow-x: hidden;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -187,7 +201,8 @@ a.closebtn {
     left: 0;
     width: 100%;
     background: rgba(135, 80, 156, 0.9);
-    box-shadow: 0 2px 0 rgba(255,255,255,.6);
+    -webkit-box-shadow: 0 2px 0 rgba(255,255,255,.6);
+            box-shadow: 0 2px 0 rgba(255,255,255,.6);
     z-index: 9999;
 }
 
@@ -224,6 +239,8 @@ a.closebtn {
 .services-section {
     text-align: center;
     color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 194, 164, 0.9)), to(rgba(23, 194, 164, 0.9))), url(img/services-bg.jpg);
+    background: -o-linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
     background: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -246,6 +263,8 @@ a.closebtn {
 
 /* START TEAM SECTION */
 .team-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 241, 248, 0.9)), to(rgba(231, 241, 248, 0.9))), url(./img/team-bg.jpg);
+    background: -o-linear-gradient(rgba(231, 241, 248, 0.9), rgba(231, 241, 248, 0.9)), url(./img/team-bg.jpg);
     background: linear-gradient(rgba(231, 241, 248, 0.9), rgba(231, 241, 248, 0.9)), url(./img/team-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -320,17 +339,23 @@ a.closebtn {
     padding: 6px;
     display: inline-block;
     font-size: 18px;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
     transition: .2s ease-in;
 }
 
 .social-icon ul li a:hover i:before {
     background: #393939;
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 /* END TEAM SECTION */
 
 /* START SKILL SECTION */
 .skill-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url(./img/skill-bg.jpg);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/skill-bg.jpg);
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/skill-bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
@@ -382,6 +407,8 @@ svg.radial-progress text {
 
 /* START PORTFOLIO SECTION */
 .portfolio-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 221, 153, 0.9)), to(rgba(255, 221, 153, 0.9))), url(./img/portfolio-bg.jpg);
+    background: -o-linear-gradient(rgba(255, 221, 153, 0.9), rgba(255, 221, 153, 0.9)), url(./img/portfolio-bg.jpg);
     background: linear-gradient(rgba(255, 221, 153, 0.9), rgba(255, 221, 153, 0.9)), url(./img/portfolio-bg.jpg);
     background-attachment: fixed;
     background-position: center top;
@@ -417,6 +444,8 @@ svg.radial-progress text {
     text-transform: uppercase;
     border-radius: 5px;
     margin: 0 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
@@ -430,7 +459,8 @@ svg.radial-progress text {
 
 .portfolio-filter button:hover {
     cursor: pointer;
-    box-shadow: inset 0 3px 5px rgba(60,71,97,.5);
+    -webkit-box-shadow: inset 0 3px 5px rgba(60,71,97,.5);
+            box-shadow: inset 0 3px 5px rgba(60,71,97,.5);
 }
 
 .portfolio-img {
@@ -455,6 +485,8 @@ svg.radial-progress text {
 
 /* START TESTIMONIAL SECTION */
 .testimonial-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 70, 128, 0.9)), to(rgba(215, 70, 128, 0.9))), url(./img/testimonial-bg.jpg);
+    background: -o-linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(./img/testimonial-bg.jpg);
     background: linear-gradient(rgba(215, 70, 128, 0.9), rgba(215, 70, 128, 0.9)), url(./img/testimonial-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -516,6 +548,8 @@ svg.radial-progress text {
 
 /* START CONTACT SECTION */
 .contact-section {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(60, 84, 153, 0.9)), to(rgba(60, 84, 153, 0.9))), url(./img/contact-bg.jpg);
+    background: -o-linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(./img/contact-bg.jpg);
     background: linear-gradient(rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(./img/contact-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -548,6 +582,22 @@ svg.radial-progress text {
     color: #fff;
     border-radius: 5px;
     margin: 5px 0;
+}
+
+.contact-section input[type="text"]::-webkit-input-placeholder, .contact-section input[type="email"]::-webkit-input-placeholder, .contact-section textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.contact-section input[type="text"]::-moz-placeholder, .contact-section input[type="email"]::-moz-placeholder, .contact-section textarea::-moz-placeholder {
+    color: #fff;
+}
+
+.contact-section input[type="text"]:-ms-input-placeholder, .contact-section input[type="email"]:-ms-input-placeholder, .contact-section textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+.contact-section input[type="text"]::-ms-input-placeholder, .contact-section input[type="email"]::-ms-input-placeholder, .contact-section textarea::-ms-input-placeholder {
+    color: #fff;
 }
 
 .contact-section input[type="text"]::placeholder, .contact-section input[type="email"]::placeholder, .contact-section textarea::placeholder {
@@ -604,6 +654,5 @@ svg.radial-progress text {
 }
 /* START FOOTER SECTION */
 /* END FOOTER SECTION */
-
 
 

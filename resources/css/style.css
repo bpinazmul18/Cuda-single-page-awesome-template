@@ -138,24 +138,9 @@ ul.main-nav li.active{
     background: rgba(100, 58, 121, 1);
 }
 
-
 .mobile-menu {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .overlay {
     width: 0;
@@ -168,7 +153,6 @@ ul.main-nav li.active{
     overflow-x: hidden;
     transition: 0.2s;
 }
-
 
 .overlay-content {
     position: absolute;
@@ -187,64 +171,15 @@ ul.main-nav li.active{
     padding: 10px 0;
 }
 
+.overlay a:hover {
+    color: #ddd;
+}
 
 a.closebtn {
     float: right;
     margin-right: 20px;
     font-size: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sticky {
     position: fixed;
